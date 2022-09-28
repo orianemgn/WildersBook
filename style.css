@@ -218,6 +218,19 @@ margin: 40px;
     border: 1px solid #888;
     width: 80%;
   }
+
+  .modal-header {
+    display: flex; 
+  }
+
+  .modal-header-items {
+    width: 40%;
+  }
+
+  .modal-header-image {
+    border-radius: 50%;
+    border: 1px solid #5465FF;
+  }
   
   /* The Close Button */
   .close {
@@ -233,3 +246,4 @@ margin: 40px;
     text-decoration: none;
     cursor: pointer;
   }
+
