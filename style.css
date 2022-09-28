@@ -1,26 +1,58 @@
-/*Global*/ 
-
-
-/*Navigation*/
-
-
-/*Home section*/
-.background{
-    background-image: url("assests/cereale.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
+/*Global*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #BFD7FF;
+  --secondary-color: #F6F9FF;
+  --third-color: #ffffff;
+  --primary-text-color: #212427;
+}
 
+/*Navigation*/
+#logo {
+  float: left;
+  width: 70px;
+}
+
+nav {
+ background-color: var(--primary-color);
+  padding: 25px;
+  list-style-type: none;
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  padding-right: 50px;
+  text-align: right;
+  
+  
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 25px 25px 20px;
+ 
+ 
+}
+
+/*Home section*/
+.background {
+  background-image: url("assests/cereale.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*About us section*/
 
 
-
-
-/*Wilders section*/ 
+/*Wilders section*/
