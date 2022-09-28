@@ -71,42 +71,44 @@ h5 {
 
 
 
-/*Navigation*/
-#logo {
-  float: left;
-  width: 70px;
-}
-
-nav {
- background-color: var(--primary-color);
-  padding: 25px;
-  list-style-type: none;
- 
-}
-
-nav ul {
-  list-style-type: none;
-  padding-right: 50px;
-  text-align: right;
+/*Header - Navigation*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: var(--primary-color);
+  }
   
+  #logo {
+    margin-right: auto;
+  }
   
-}
-
-nav ul li {
-  display: inline;
-  padding: 0px 25px 25px 20px;
- 
- 
-}
+  header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  header a:hover {
+    color: #5465FF;
+  }
 
 /*Home section*/
-.background {
+#home {
   background-image: url("assests/cereale.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 80vh;
   display: flex;
+  color: var(--secondary-color);
   justify-content: center;
   align-items: center;
 }
