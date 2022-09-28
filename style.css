@@ -100,13 +100,14 @@ nav ul li {
 }
 
 /*Home section*/
-.background {
+#home {
   background-image: url("assests/cereale.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 80vh;
   display: flex;
+  color: var(--secondary-color);
   justify-content: center;
   align-items: center;
 }
