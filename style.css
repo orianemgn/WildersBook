@@ -121,3 +121,17 @@ header {
 
 
 /*Wilders section*/
+
+#wilders {
+text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+
+.items {
+    background-color: var(--primary-color); 
+}
