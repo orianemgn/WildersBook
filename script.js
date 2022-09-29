@@ -3,7 +3,7 @@ console.log("Hello World!")
 //Section 3 - Wilders - Code for the modal 
 //Get the element in the cards div
 let cards = document.getElementsByClassName("cards-container");
-//console.log("CARDS", cards)
+console.log("CARDS", cards)
 
 //get all button in array id to use it later to get the button how open the modal 
 let buttonId = [];
@@ -20,31 +20,28 @@ for (let i = 0; i < cards.length; i++) {
 //console.log("ModalboxId", modalBoxId)
 
 // Get the modal 
-//let modal; 
 //let modal = document.getElementById("modal-box")
 //console.log(modal.innerHTML); 
 
-//loop inside the array of id 
-//for (let i = 0; i < buttonId.length; i++) {
-//  let modal= document.getElementById("buttonId[i]");
-//  console.log(modal)
-  
-//}
 
 //Get the button that opens the modal
 //let btn = document.getElementById("modal-button"); 
-//for (let i = 0; i < buttonId.length; i++) {
-//  let modal= buttonId[i];
-//  console.log(buttonId[i])
-//  console.log(modalBoxId[i])
-//}
+
+
+//Get the span id
+let modelContent = document.getElementsByClassName("modal-content"); 
+let spanId = []; 
+for (let i = 0; i < modelContent.length; i++) { 
+  spanId.push(modelContent[i].children[0].id);
+}
 
 //Get the span element that closes the modal 
-let span = document.getElementsByClassName("close")[0];
-console.log("SPAN", span)
+//let span1 = document.getElementsByClassName("close")[1];
+//console.log("SPAN", span1)
 
 let btn; 
 let modal; 
+let span; 
 for (let i = 0; i < buttonId.length; i++) {
   //get the button that opens the modal
   let btn = document.getElementById(buttonId[i]); 
@@ -52,14 +49,20 @@ for (let i = 0; i < buttonId.length; i++) {
   let modal = document.getElementById(modalBoxId[i]);
   //console.log("Modal", modal.innerHTML)
 
+  let span = document.getElementById(spanId[i]);
+  console.log("SPANID", span)
+
   // When the user clicks on the button, open the modal
   btn.onclick = function() {
     modal.style.display="block"; 
+    console.log(modal)
   }
 
   //When the user clicks on span (x), close the modal
+  console.log(span)
   span.onclick = function(){
     modal.style.display = "none"; 
+    
   }; 
 
   //When the user clicks anywhere outsite the modal, close interface
