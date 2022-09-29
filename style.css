@@ -1,7 +1,7 @@
 /*Global*/ 
 *{
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -9,63 +9,73 @@
 :root {
     /* Color to use again in the rest of the code*/
     --primary-color: #BFD7FF;
-    --secondary-color: #F6F9FF; 
+    --secondary-color: #F6F9FF;
     --third-color: #FFFFFF;
-    --primary-text-color: ##212427; 
-    --screen-sm: 768px; 
-    --screen-md: 1024px; 
-    --screen-lg: 1200px; 
+    --primary-text-color: ##212427;
+    --screen-sm: 768px;
+    --screen-md: 1024px;
+    --screen-lg: 1200px;
     --screen-xl: 1600px;
 }
-
+/*I think code not working from here to 70 - we have to find a responsive solution for the font size*/
 body p{
     font-size:14px;
     line-height:1.6;
+    color: var(--primary-text-color);
+}
 
-    @media screen and (min-width:var(--screen-sm) max-width:var(--screen-lg)){
+@media screen and (min-width:768px) and (max-width:1200px){
+    body p {
         font-size:16px;
     }
+}
 
-    @media screen and (min-width:var(--screen-lg) max-width:var(--screen-xl)){
+@media screen and (min-width:1200px) and (max-width:1600px){
+    body p {
         font-size:18px;
     }
+}
 
-    @media screen and (min-width:var(--screen-xl)){
+@media screen and (min-width:1600px){
+    body p {
         font-size:20px;
     }
 }
 
-h1 { 
+h1 {
     font-size: 2.4rem;
 }
-h2 { 
-    font-size: 2rem; 
+h2 {
+    font-size: 2rem;
 }
-h3 { 
-    font-size: 1.6rem; 
+h3 {
+    font-size: 1.6rem;
 }
-h4 { 
-    font-size: 1.2rem; 
+h4 {
+    font-size: 1.2rem;
 }
-h5 { 
-    font-size: 1rem; 
+h5 {
+    font-size: 1rem;
 }
 
 @media screen and (min-width:var(--screen-sm)){
+    h1 {
+
+@media screen and (min-width:768px){
     h1 { 
         font-size: 3rem;
     }
-    h2 { 
-        font-size: 2.5rem; 
+    h2 {
+        font-size: 2.5rem;
     }
-    h3 { 
-        font-size: 2rem; 
+    h3 {
+        font-size: 2rem;
     }
-    h4 { 
-        font-size: 1.5rem; 
+    h4 {
+        font-size: 1.5rem;
     }
-    h5 { 
-        font-size: 1rem; 
+    h5 {
+        font-size: 1rem;
     }
 }
 
@@ -74,28 +84,35 @@ h5 {
 /*Header - Navigation*/
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
     box-shadow: 0 1px 8px #ddd;
     background-color: var(--primary-color);
   }
-  
+
   #logo {
     margin-right: auto;
   }
-  
+
   header li {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
   }
-  
+
   header a {
     text-decoration: none;
     color: #555;
+    display: flex;
   }
-  
+
+  header a img {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    width: 70px;
+  }
+
   header a:hover {
     color: #5465FF;
   }
@@ -116,7 +133,7 @@ header {
 /*About us section*/
 
 #about {
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
 }
 
 
@@ -124,14 +141,353 @@ header {
 
 #wilders {
 text-align: center;
+margin: 40px; 
 }
+
 
 .container {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.items {
+    background-color: var(--primary-color);
+}
+
+
+.cards {
+    background-color: var(--secondary-color); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 10px;
+    margin: 30px; 
+}
+
+#wilders .cards img {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ; 
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cards-container {
+    padding: 10px 16px;
+}
+
+.cards button {
+    background-color: #5465FF;
+    border: 1px solid #5465FF;
+    margin: 10px; 
+    padding: 5% 15%; 
+    border-radius: 4px;
+    color: var(--secondary-color); 
+    text-transform: uppercase;
+    font-size: 0.8rem; 
+    letter-spacing: 0.05rem;
+}
+
+.cards button:hover {
+    background-color:var(--secondary-color);
+    color: #5465FF;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cards {
+        width: 15%;
+    }
+}
+
+
+/*The Modal*/ 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .modal-header {
+    display: flex; 
+  }
+
+  .modal-header-items {
+    width: 40%;
+  }
+
+  .modal-header-image {
+    border-radius: 50%;
+    border: 1px solid #5465FF;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+/* Contact */
+#wrapper {
+	font-family:verdana;
+	margin: 30px auto ;
+	padding: 30px;
+	background: #4D6879; /* You can change the main color of thew form here. */
+	font-size: 14px;
+	width:100%;
+	/* max-width:500px; */
+	box-sizing: border-box;
+}
+form {
+  max-width: 500px;
+  margin: auto;
+}
+label {
+	display: block;
+	font-size: 24px;
+	padding: 13px 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+}
+
+input {
+	height: 18px;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 10px #444;
+	-moz-box-shadow: 0 0 10px #444;
+	box-shadow: 0 0 10px #444;
+	border: 1px solid #fff;
+}
+
+textarea {
+	height: 150px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 10px #444;
+	-moz-box-shadow: 0 0 10px #444;
+	box-shadow: 0 0 10px #444;
+  resize: none;
+}
+
+input[type="text"]:hover, textarea:hover {
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+input#submit {
+	text-align: center;
+	color: #fff;
+	height: 50px;
+	padding: 0;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 50px;
+  width: 25%;
+	border: 1px solid #000;
+	background: #000;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b3b3b), color-stop(100%, #000000));
+	background: -webkit-linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	background: -moz-linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	background: -o-linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	background: linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	opacity: 0.5;
+}
+
+
+input#submit:hover {
+	color: #ccc;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+label {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/* Contact */
+    flex-direction: column; 
     justify-content: space-evenly; 
     align-items: center; 
 }
 
-.items {
-    background-color: var(--primary-color); 
+
+
+
+
+
+
+
+
+
+/*Backup CSS roles Ahmed*/
+/*
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
+
+div, li, p {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.navBar-container {
+  background-color: #e2eff1;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  justify-content: space-around;
+  padding: 15px;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.navBar {
+  text-align: center;
+  margin: auto 0;
+  font-size: 1.5em;
+}
+ul {
+  padding: 0;
+}
+
+ul li{
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration-line: none;
+  margin-left: 5px;
+}
+a {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  color: gray;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.main {
+  display: inline-block;
+  background-color: #f5f1da;
+  width: 100%;
+  padding: 0 130px;
+}
+.nasted-div {
+  margin-top: 10%;
+  padding: 10%;
+}
+.computer {
+  float: left;
+  margin-right: 30px;
+}
+.main-para {
+  font-size: 25px;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.card-img-top {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card {
+  padding: 1.5em 0.5em 0.5em;
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 10px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.btn-primary {
+  display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #007bff;
+}
+
+.btn-primary:hover{
+  background-color: #0069d9;
+
+}
+
+.members {
+  width: 100%;
+  background-color: #c6c5b3;
+  padding: 10%;
+  display: flex;
+  flex-wrap: wrap;
+} */
