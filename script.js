@@ -77,7 +77,7 @@ const checkValdity = value => {
   let found = regex.test(smallLetters);
   console.log('========>>>>', found);
 };
-=======
+
 
 // console.log("Hello World!")
 // let hello = 'hello';
