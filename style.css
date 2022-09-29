@@ -147,12 +147,9 @@ margin: 40px;
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.items {
-    background-color: var(--primary-color);
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center; 
 }
 
 
@@ -165,7 +162,7 @@ margin: 40px;
     margin: 30px; 
 }
 
-#wilders .cards img {
+#wilders .cards-image {
     width: 100%;
     border-radius: 10px 10px 0 0 ; 
 }
@@ -206,7 +203,6 @@ margin: 40px;
     }
 }
 
-
 /*The Modal*/ 
 /* The Modal (background) */
 .modal {
@@ -229,20 +225,37 @@ margin: 40px;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    border-radius: 30px;
+    width: 70%;
   }
 
   .modal-header {
     display: flex; 
+    align-items: center;
+    justify-content: center;
   }
 
-  .modal-header-items {
+  .modal-header-items-1, .modal-header-items-2 {
     width: 40%;
   }
 
+  .modal-header-items-2 h4 {
+    padding-bottom: 30px;
+  }
+
+  .social-links img{
+    padding: 10px 20px;
+  }
+
+
   .modal-header-image {
+    width: 100%;
     border-radius: 50%;
     border: 1px solid #5465FF;
+  }
+
+  .modal-body {
+    padding: 30px 10px 20px; 
   }
   
   /* The Close Button */
