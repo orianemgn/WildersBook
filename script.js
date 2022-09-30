@@ -2,16 +2,14 @@ console.log("Hello World!")
 
 //Section 3 - Wilders - Code for the modal
 // Get the modal
-let modal = document.getElementById("modal-box");
-// console.log(modal.innerHTML);
+let modal = document.getElementById('modal-box');
 
 //Get the button that opens the modal
 let btn = document.getElementById('modal-button');
 
 //Get the span element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-console.log("SPAN", span)
-
+let span = document.getElementsByClassName('close')[0];
+console.log('SPAN', span);
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
@@ -26,7 +24,7 @@ span.onclick = function () {
 //When the user clicks anywhere outsite the modal, close interface
 window.onclick = function (event) {
   if (event.target == modal) {
-    // modal.style.display = 'none';
+    modal.style.display = 'none';
   }
 };
 

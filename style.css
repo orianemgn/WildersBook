@@ -1,4 +1,4 @@
-/*Global*/ 
+/*Global*/
 *{
     padding: 0;
     margin: 0;
@@ -62,7 +62,7 @@ h5 {
     h1 {
 
 @media screen and (min-width:768px){
-    h1 { 
+    h1 {
         font-size: 3rem;
     }
     h2 {
@@ -141,7 +141,7 @@ header {
 
 #wilders {
 text-align: center;
-margin: 40px; 
+margin: 40px;
 }
 
 
@@ -157,17 +157,17 @@ margin: 40px;
 
 
 .cards {
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 50%;
     border-radius: 10px;
-    margin: 30px; 
+    margin: 30px;
 }
 
 #wilders .cards img {
     width: 100%;
-    border-radius: 10px 10px 0 0 ; 
+    border-radius: 10px 10px 0 0 ;
 }
 
 .cards:hover {
@@ -181,12 +181,12 @@ margin: 40px;
 .cards button {
     background-color: #5465FF;
     border: 1px solid #5465FF;
-    margin: 10px; 
-    padding: 5% 15%; 
+    margin: 10px;
+    padding: 5% 15%;
     border-radius: 4px;
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     text-transform: uppercase;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
     letter-spacing: 0.05rem;
 }
 
@@ -207,7 +207,7 @@ margin: 40px;
 }
 
 
-/*The Modal*/ 
+/*The Modal*/
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -222,7 +222,7 @@ margin: 40px;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
@@ -233,7 +233,7 @@ margin: 40px;
   }
 
   .modal-header {
-    display: flex; 
+    display: flex;
   }
 
   .modal-header-items {
@@ -244,7 +244,7 @@ margin: 40px;
     border-radius: 50%;
     border: 1px solid #5465FF;
   }
-  
+
   /* The Close Button */
   .close {
     color: #aaaaaa;
@@ -252,7 +252,7 @@ margin: 40px;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
@@ -357,10 +357,10 @@ label {
 	font-size: 14px;
 }
 /* Contact */
-    flex-direction: column; 
-    justify-content: space-evenly; 
-    align-items: center; 
-}
+    /* flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
 
 
 
