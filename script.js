@@ -5,7 +5,7 @@ console.log("Hello World!")
 let cards = document.getElementsByClassName("cards-container");
 console.log("CARDS", cards)
 
-//get all button in array id to use it later to get the button how open the modal 
+//Get all button id und modal-box id in array id to use it later to get the button how open the modal 
 let buttonId = [];
 let modalBoxId = [];
 
@@ -16,28 +16,12 @@ for (let i = 0; i < cards.length; i++) {
   modalBoxId.push(cards[i].children[2].id);
 }
 
-//console.log("Buttonid", buttonId)
-//console.log("ModalboxId", modalBoxId)
-
-// Get the modal 
-//let modal = document.getElementById("modal-box")
-//console.log(modal.innerHTML); 
-
-
-//Get the button that opens the modal
-//let btn = document.getElementById("modal-button"); 
-
-
-//Get the span id
+//Get all the span id
 let modelContent = document.getElementsByClassName("modal-content"); 
 let spanId = []; 
 for (let i = 0; i < modelContent.length; i++) { 
   spanId.push(modelContent[i].children[0].id);
 }
-
-//Get the span element that closes the modal 
-//let span1 = document.getElementsByClassName("close")[1];
-//console.log("SPAN", span1)
 
 let btn; 
 let modal; 
@@ -64,8 +48,7 @@ for (let i = 0; i < buttonId.length; i++) {
       modal.style.display = "none"; 
     }; 
 
-    //When the user clicks anywhere outsite the modal, close interface
-    //NOT WORKING ANYMORE FOR THE MOMENT 
+    //When the user clicks anywhere outsite the modal, close interface 
     window.addEventListener("click", function(event) {
     console.log("Event", event.target, "modal", modal);
     if (event.target == modal) {
@@ -73,6 +56,7 @@ for (let i = 0; i < buttonId.length; i++) {
     }
   });   
 }
+//End section 3
 
 
 
