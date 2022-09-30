@@ -66,12 +66,12 @@ for (let i = 0; i < buttonId.length; i++) {
 
     //When the user clicks anywhere outsite the modal, close interface
     //NOT WORKING ANYMORE FOR THE MOMENT 
-    window.onclick = function(event) {
+    window.addEventListener("click", function(event) {
     console.log("Event", event.target, "modal", modal);
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  };   
+  });   
 }
 
 
