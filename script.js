@@ -202,7 +202,6 @@ const setData = (id, val) => {
 // console.log(hello);
 // console.log(document);
 // console.log(window);
-
 // let hey = () => {
 //   console.log(hello);
 // };
