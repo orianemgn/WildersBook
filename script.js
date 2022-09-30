@@ -5,7 +5,9 @@
 let cards = document.getElementsByClassName('cards-container');
 // console.log('CARDS', cards);
 
+
 //get all button in array id to use it later to get the button how open the modal
+
 let buttonId = [];
 let modalBoxId = [];
 
@@ -15,6 +17,7 @@ for (let i = 0; i < cards.length; i++) {
   buttonId.push(cards[i].children[1].id);
   modalBoxId.push(cards[i].children[2].id);
 }
+
 
 //console.log("Buttonid", buttonId)
 //console.log("ModalboxId", modalBoxId)
@@ -66,11 +69,49 @@ for (let i = 0; i < buttonId.length; i++) {
   //NOT WORKING ANYMORE FOR THE MOMENT
   window.addEventListener('click', function (event) {
     // console.log('Event', event.target, 'modal', modal);
+
+//Get all the span id
+let modelContent = document.getElementsByClassName("modal-content"); 
+let spanId = []; 
+for (let i = 0; i < modelContent.length; i++) { 
+  spanId.push(modelContent[i].children[0].id);
+}
+
+let btn; 
+let modal; 
+let span; 
+for (let i = 0; i < buttonId.length; i++) {
+    //get the button that opens the modal
+    let btn = document.getElementById(buttonId[i]); 
+    // the the modal
+    let modal = document.getElementById(modalBoxId[i]);
+    //console.log("Modal", modal.innerHTML)
+
+    let span = document.getElementById(spanId[i]);
+    console.log("SPANID", span)
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display="block"; 
+      console.log(modal)
+    }
+
+    //When the user clicks on span (x), close the modal
+    console.log(span) 
+    span.onclick = function(){
+      modal.style.display = "none"; 
+    }; 
+
+    //When the user clicks anywhere outsite the modal, close interface 
+    window.addEventListener("click", function(event) {
+    console.log("Event", event.target, "modal", modal);
+
     if (event.target == modal) {
       modal.style.display = 'none';
     }
   });
 }
+//End section 3
 
 //Section 4 - Contact
 let inputs = document.querySelectorAll('input');

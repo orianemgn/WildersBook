@@ -23,7 +23,7 @@ body p{
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
-    font-family:'Raleway', sans-serif;;
+    font-family:'Raleway', sans-serif;
     color: var(--primary-text-color);
 }
 
@@ -285,6 +285,7 @@ header {
     .social-links img{
       padding: 10px 20px;
     }
+
   
   
     .modal-header-image {
