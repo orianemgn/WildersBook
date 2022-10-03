@@ -1,4 +1,29 @@
 // console.log("Hello World!")
+//Section 3 Wilders - code to display the wilders 
+let wildersGroup1 = [
+  {
+    name: "Andreï", 
+    description: "Lorem ipsum dolor sit amet, consectetur adip",
+    picture: "", 
+    linkedin: "", 
+    gitHub: "" 
+  },
+  {
+    name: "Ahmed", 
+    description: "Lorem ipsum dolor sit amet, consectetur adip",
+    picture: "", 
+    linkedin: "", 
+    gitHub: "" 
+  },
+  {
+    name: "Oriane", 
+    description: "Lorem ipsum dolor sit amet, consectetur adip",
+    picture: "", 
+    linkedin: "", 
+    gitHub: "" 
+  },
+]; 
+
 
 //Section 3 - Wilders - Code for the modal
 //Get the element in the cards div

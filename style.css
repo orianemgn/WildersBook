@@ -198,11 +198,13 @@ header {
       width: 50%;
       border-radius: 10px;
       margin: 30px; 
+      padding: 30px;
   }
   
   #wilders .cards-image {
-      width: 100%;
-      border-radius: 10px 10px 0 0 ; 
+      width: 90%;
+      border-radius: 50% ; 
+      border: 1px solid var(--primary-color);
   }
   
   .cards:hover {
