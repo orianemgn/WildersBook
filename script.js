@@ -391,19 +391,21 @@ for (let i = 0; i < buttonId.length; i++) {
 
 //Section 4 - Contact
 let inputs = document.querySelectorAll('input');
-let button = document.getElementsByClassName('submit');
-//console.log(button);
 
-// button.addEventListener('click', function () {
-//   console.log(doSomeMagic(inputs));
-// });
+let button = document.getElementById('submit');
+console.log(button);
+
+button.addEventListener('click', function () {
+  console.log(doSomeMagic(inputs));
+});
 
 function doSomeMagic(inputsEle) {
   for (let i = 0; i < inputsEle.length; i++) {
     // console.log(inputs[i]);
     inputsEle[i].addEventListener(
       'input',
-      function () {
+      function (e) {
+        e.preventDefault();
         onSubmit(inputsEle[i]);
       },
       false
