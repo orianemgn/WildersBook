@@ -1,76 +1,9 @@
 // console.log("Hello World!")
 
-//Exemple adpte un chat 
-// const cards = document.querySelector(".cards");
-
-// const animalsToAdopt = [
-//   {
-//     name: "Lucky",
-//     picture: "https://placekitten.com/200/287"
-//   },
-//   {
-//     name: "Symba",
-//     picture: "https://placekitten.com/200/139"
-//   },
-//   {
-//     name: "Léo",
-//     picture: "https://placekitten.com/200/90"
-//   },
-//   {
-//     name: "Milo",
-//     picture: "https://placekitten.com/200/194"
-//   },
-//   {
-//     name: "Charly",
-//     picture: "https://placekitten.com/200/179"
-//   }
-// ];
-
-// function createCard(title, imageUrl) {
-//   const card = document.createElement("div");
-//   card.classList.add("card");
-//   cards.appendChild(card);
-
-//   const cardHeader = document.createElement("div");
-//   cardHeader.classList.add("card-header");
-//   card.appendChild(cardHeader);
-
-//   const cardImg = document.createElement("div");
-//   cardImg.style.backgroundImage = `url(${imageUrl})`;
-//   cardImg.classList.add("card-img");
-//   cardHeader.appendChild(cardImg);
-
-//   // Step1: Create the cardBody div, add the class card-body and add it to the card
-//   const cardBody = document.createElement("div");
-//   cardBody.classList.add("card-body");
-//   card.appendChild(cardBody);
-//   // Step2: Create the cardTitle h2, add the class card-title,
-//   // set the text inside the tag to the "title" parameter of this function
-//   // and add it to the cardBody
-//   const cardTitle = document.createElement("h2");
-//   cardTitle.classList.add("card-title");
-//   cardTitle.innerHTML = title;
-//   cardBody.appendChild(cardTitle);
-
-//   // Step3: Create the cardButton button, add the class card-button,
-//   // set the text inside the tag to be "Adopt Now"
-//   // and add it to the cardBody
-//   const cardButton = document.createElement("button");
-//   cardButton.classList.add("card-button");
-//   cardButton.innerHTML = "Adopt Now";
-//   cardBody.appendChild(cardButton);
-// }
-
-// /* Step 4: Create a for loop, for each element of the array, 
-//  call the function createCard with the corresponding parameter */
-// for (let i = 0; i < animalsToAdopt.length; i++) {
-//   createCard(animalsToAdopt[i].name, animalsToAdopt[i].picture);
-// }
-
 //Section 3 Wilders - code to display the wilders 
 let wildersGroup1 = [
   {
-    id: 6, 
+    id: 1, 
     name: "Andrei", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     picture:  "/assests/7848.jpg", 
@@ -78,7 +11,7 @@ let wildersGroup1 = [
     gitHub: "https://github.com/AndreiLhu" 
   },
   {
-    id: 7, 
+    id: 2, 
     name: "Ahmed", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     picture: "/assests/7848.jpg", 
@@ -86,7 +19,7 @@ let wildersGroup1 = [
     gitHub: "https://github.com/elbehary01" 
   },
   {
-    id: 8, 
+    id: 3, 
     name: "Goerg", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     picture: "/assests/7848.jpg", 
@@ -94,7 +27,7 @@ let wildersGroup1 = [
     gitHub: "https://github.com/GeorgBerlin" 
   },
   {
-    id: 9,
+    id: 4,
     name: "Oriane", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     picture: "/assests/7848.jpg", 
@@ -232,10 +165,7 @@ function createCards(id, name, description, picture, linkedin, github) {
   const modalDescription = document.createElement("p"); 
   modalDescription.innerHTML = description; 
   modalBody.appendChild(modalDescription);
-
-
 }
-
 
 //Create a for loop, for each element of the array, 
 //call the function createCard with the corresponding parameter */
