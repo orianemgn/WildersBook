@@ -36,6 +36,114 @@ let wildersGroup1 = [
   },
 ]; 
 
+
+let wildersGroup2 = [
+  {
+    id: 5,
+    name: "Hendra", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 6,
+    name: "Lars", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 7,
+    name: "Lera", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 8,
+    name: "Luis", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 9,
+    name: "Marianne", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id:10,
+    name: "Mathieu", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 11,
+    name: "Mulugeta", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id:12,
+    name: "Nevin", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 13,
+    name: "Robert", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 14,
+    name: "Stedan D", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 15,
+    name: "Stefan I", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 16,
+    name: "Valeriia", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+  {
+    id: 17,
+    name: "Vladyslava", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "/assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
+  },
+]; 
+
 //Get the container where have to be the wilders 
 const container =  document.querySelector(".container");
 console.log("CONTAINER", container);
@@ -169,9 +277,35 @@ function createCards(id, name, description, picture, linkedin, github) {
 
 //Create a for loop, for each element of the array, 
 //call the function createCard with the corresponding parameter */
+
+//function handelWilder(){
+//  const getGroup = 
+//}; 
+
 for (let i = 0; i < wildersGroup1.length; i++) {
   createCards(wildersGroup1[i].id, wildersGroup1[i].name, wildersGroup1[i].description, wildersGroup1[i].picture, wildersGroup1[i].linkedin, wildersGroup1[i].gitHub);
 }
+
+for (let i = 0; i < wildersGroup2.length; i++) {
+  createCards(wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
+}
+
+window.addEventListener("click", function(event){
+  console.log("GROUPA", event.target.id)
+  if (event.target.id === "groupB") {
+    
+  }
+})
+
+
+
+//for (let i = 0; i < wildersGroup2.length; i++) {
+//  createCards(wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
+//}
+
+
+//Implement logic : if nothing other handelclick on our group display our group 
+// if click on groupe 2 display evrery one of wild School 
 
 
 //Section 3 - Wilders - Code for the modal
