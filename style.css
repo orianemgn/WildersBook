@@ -248,8 +248,10 @@ header {
   }
 
   .cards-container {
-      padding: 10px 16px;
-  }
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+}
 
   .cards button {
       background-color: var(--primary-color);
