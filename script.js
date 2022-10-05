@@ -146,10 +146,13 @@ let wildersGroup2 = [
 
 //Get the container where have to be the wilders 
 const container =  document.querySelector(".container");
-console.log("CONTAINER", container);
+//console.log("CONTAINER", container);
+
+const container2 =  document.querySelector(".container2");
+
 
 //Function to create the cards in container 
-function createCards(id, name, description, picture, linkedin, github) {
+function createCards(container, id, name, description, picture, linkedin, github) {
   // Step 1: The card
   //create the div with class cards inside container
   const cards = document.createElement("div");
@@ -275,6 +278,7 @@ function createCards(id, name, description, picture, linkedin, github) {
   modalBody.appendChild(modalDescription);
 }
 
+
 //Create a for loop, for each element of the array, 
 //call the function createCard with the corresponding parameter */
 
@@ -283,19 +287,35 @@ function createCards(id, name, description, picture, linkedin, github) {
 //}; 
 
 for (let i = 0; i < wildersGroup1.length; i++) {
-  createCards(wildersGroup1[i].id, wildersGroup1[i].name, wildersGroup1[i].description, wildersGroup1[i].picture, wildersGroup1[i].linkedin, wildersGroup1[i].gitHub);
+  createCards(container, wildersGroup1[i].id, wildersGroup1[i].name, wildersGroup1[i].description, wildersGroup1[i].picture, wildersGroup1[i].linkedin, wildersGroup1[i].gitHub);
 }
 
 for (let i = 0; i < wildersGroup2.length; i++) {
-  createCards(wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
+  createCards(container2, wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
 }
 
-window.addEventListener("click", function(event){
-  console.log("GROUPA", event.target.id)
-  if (event.target.id === "groupB") {
-    
-  }
-})
+
+let wilder2 = document.getElementById("groupB"); 
+wilder2.addEventListener("click", showSecondWilder)
+
+function showSecondWilder(e){
+
+  container2.classList.add("show");
+  container.classList.add("hide");  
+ 
+}
+
+let wilder1 = document.getElementById("groupA"); 
+wilder1.addEventListener("click", showFirstWilder)
+
+function showFirstWilder(e){
+  container.classList.remove("hide"); 
+  container2.classList.remove("show"); 
+}
+
+
+
+
 
 
 
@@ -344,16 +364,16 @@ for (let i = 0; i < buttonId.length; i++) {
     //console.log("Modal", modal.innerHTML)
 
     let span = document.getElementById(spanId[i]);
-    console.log("SPANID", span)
+    //console.log("SPANID", span)
 
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
       modal.style.display="block"; 
-      console.log(modal)
+      //console.log(modal)
     }
 
     //When the user clicks on span (x), close the modal
-    console.log(span) 
+    //console.log(span) 
     span.onclick = function(){
       modal.style.display = "none"; 
     }; 
@@ -372,7 +392,7 @@ for (let i = 0; i < buttonId.length; i++) {
 //Section 4 - Contact
 let inputs = document.querySelectorAll('input');
 let button = document.getElementsByClassName('submit');
-console.log(button);
+//console.log(button);
 
 // button.addEventListener('click', function () {
 //   console.log(doSomeMagic(inputs));
@@ -392,7 +412,7 @@ function doSomeMagic(inputsEle) {
 }
 
 const onSubmit = ele => {
-  console.log(ele);
+  //console.log(ele);
   let attr = ele.getAttribute('id');
   let value = ele.value;
   // console.log(value);
@@ -419,12 +439,12 @@ const onSubmit = ele => {
       }
       break;
     default:
-      console.log('not here');
+      //console.log('not here');
   }
 };
 
 const checkValdity = (id, value) => {
-  console.log('=========>>>>>>>>', id, value);
+  //console.log('=========>>>>>>>>', id, value);
   // let smallLetters = value.toLowerCase();
   let nameRegex = /^(?=.{2,25}$)[a-zA-Z]+(?: [a-zA-Z]+)?$/;
   let emailRegex =
@@ -446,9 +466,9 @@ const checkValdity = (id, value) => {
 };
 
 const setData = (id, val) => {
-  console.log('HAHAHAHAH', id, val);
+  //console.log('HAHAHAHAH', id, val);
   let messageData = {};
-  console.log((messageData[id] = val));
+  //console.log((messageData[id] = val));
 };
 
 
