@@ -1,49 +1,49 @@
 /*Global*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 :root {
-    /* Color to use again in the rest of the code*/
-    --primary-color: #F76C6C;
-    --secondary-color: #f1f1f1;
-    --third-color: #FFFFFF;
-    --primary-text-color: ##212427;
+  /* Color to use again in the rest of the code*/
+  --primary-color: #f76c6c;
+  --secondary-color: #f1f1f1;
+  --third-color: #ffffff;
+  --primary-text-color: ##212427;
 }
-
 
 /*I think code not working from here to 70 - we have to find a responsive solution for the font size*/
-body p{
-    font-size:14px;
-    line-height:1.6;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    font-family:'Raleway', sans-serif;
-    color: var(--primary-text-color);
+body p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-text-color);
 }
 
-@media screen and (min-width:768px) and (max-width:1200px){
-    body p {
-        font-size:16px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body p {
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width:1200px) and (max-width:1600px){
-    body p {
-        font-size:18px;
-    }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body p {
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width:1600px){
-    body p {
-        font-size:20px;
-    }
+@media screen and (min-width: 1600px) {
+  body p {
+    font-size: 20px;
+  }
 }
+
+
 
 hr {
   /* background-color: var(--secondary-color); */
@@ -56,25 +56,25 @@ hr {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Varela Round', sans-serif;
+
   color: var(--primary-text-color);
 }
 
 h1 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-
 
 
 @media screen and (min-width:768px){
@@ -95,8 +95,6 @@ h5 {
         font-size: 1rem;
     }
 }
-
-
 
 /*Header - Navigation*/
 .logo {
@@ -209,7 +207,6 @@ a {
   .nav-menu.active {
     left: 0;
   }
-  
 }
 
 /*Home - section 1*/
@@ -239,8 +236,6 @@ a {
   color: var(--primary-color);
 }
 
-
-
 /*About us - section2*/
 
 #about {
@@ -249,7 +244,6 @@ a {
     /* text-align: justify; */
     font-size: 2rem;
     line-height: 2.5rem;
-
 }
 
 #about h2 {
@@ -270,6 +264,51 @@ a {
   width: 40%;
 }
 
+
+
+/*About School - section2*/
+#aboutschool p {
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  #aboutschool {
+    background-color: var(--secondary-color);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #aboutschool h2 {
+    color: var(--primary-color);
+    order: -1;
+  }
+  
+  #aboutschool img {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #aboutschool {
+    background-color: var(--secondary-color);
+    padding: 10%;
+  }
+
+  #aboutschool h2 {
+    color: var(--primary-color);
+  }
+
+  #aboutschool img {
+    float: right;
+    margin: 0 0 5px 30px;
+    border: 1px solid var(--primary-color);
+    width: 40%;
+  }
+}
+/*END About School - section2*/
 
 
 /*Wilders - section3*/
@@ -303,6 +342,7 @@ a {
   display: flex;
 }
   
+
   
   .cards {
       background-color: var(--secondary-color);
@@ -430,6 +470,7 @@ a {
       cursor: pointer;
     }
 
+
 /* Contact */
 .contact-header {
   text-align: center;
@@ -459,77 +500,84 @@ label {
 }
 
 input {
-	height: 18px;
-	padding: 20px;
-	width: 100%;
-	box-sizing: border-box;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	-webkit-box-shadow: 0 0 10px #444;
-	-moz-box-shadow: 0 0 10px #444;
-	box-shadow: 0 0 10px #444;
-	border: 1px solid #fff;
+  height: 18px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 10px #444;
+  -moz-box-shadow: 0 0 10px #444;
+  box-shadow: 0 0 10px #444;
+  border: 1px solid #fff;
 }
 
 textarea {
-	height: 150px;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 15px;
-	border: 1px solid #fff;
-	-webkit-border-radius: 6px;
-	-khtml-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	-webkit-box-shadow: 0 0 10px #444;
-	-moz-box-shadow: 0 0 10px #444;
-	box-shadow: 0 0 10px #444;
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 10px #444;
+  -moz-box-shadow: 0 0 10px #444;
+  box-shadow: 0 0 10px #444;
   resize: none;
 }
 
-input[type="text"]:hover, textarea:hover {
-	border: 1px solid #fff;
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
+input[type="text"]:hover,
+textarea:hover {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset,
+    0 0 5px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset,
+    0 0 5px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset,
+    0 0 5px rgba(255, 255, 255, 0.4);
 }
 
 input#submit {
-	text-align: center;
-	color: #fff;
-	height: 50px;
-	padding: 0;
-	text-shadow: 1px 1px 1px #000;
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  padding: 0;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 50px;
   width: 25%;
-	border: 1px solid #000;
-	background: #000;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b3b3b), color-stop(100%, #000000));
-	background: -webkit-linear-gradient(top, #3b3b3b 0%,#000000 100%);
-	background: -moz-linear-gradient(top, #3b3b3b 0%,#000000 100%);
-	background: -o-linear-gradient(top, #3b3b3b 0%,#000000 100%);
-	background: -ms-linear-gradient(top, #3b3b3b 0%,#000000 100%);
-	background: linear-gradient(top, #3b3b3b 0%,#000000 100%);
-	opacity: 0.5;
+  border: 1px solid #000;
+  background: #000;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #3b3b3b),
+    color-stop(100%, #000000)
+  );
+  background: -webkit-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background: -moz-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background: -o-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background: -ms-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background: linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  opacity: 0.5;
 }
 
-
 input#submit:hover {
-	color: #ccc;
-	cursor: pointer;
-	opacity: 0.8;
+  color: #ccc;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 label {
-	text-transform: uppercase;
-	font-size: 14px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
-
-
 
 /*footer*/
 
@@ -545,15 +593,6 @@ footer p {
   font-weight: 300;
   color: var(--third-color);
 }
-
-
-
-
-
-
-
-
-
 
 /*Backup CSS roles Ahmed*/
 body {
