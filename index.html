@@ -7,102 +7,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Reem+Kufi:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Reem+Kufi:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>WildersBook</title>
 </head>
 <body>
-  <div class="navBar-container">
-    <div>
-      <img class="logo" src="img/logo.png" alt="Wild-logo">
-    </div>
-    <nav class="navBar">
-      <ul>
-        <li> <a href="#">Home</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">About</a></li>
-        </ul>
-        </nav>
-  </div>
+
+    <header>
+        <div class="navigation"> 
+            <img class="logo" src="assests/logo school.png" alt="Logo" />
+           <nav class="navbar">
+            
+              <ul class="nav-menu">
+                 <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                 </li>
+                 <li id="groupA" class="nav-item">
+                    <a href="#wilders" class="nav-link">Wilders</a>
+                 </li>
+                 <li id="groupB" class="nav-item">
+                    <a href="#wilders" class="nav-link">More Wilders</a>
+                 </li>
+                 <li>
+                    <a href="#aboutschool" class="nav-link">About School</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                 </li>
+              </ul>
+              <div class="hamburger">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+              </div>
+           </nav>
+        </div>
+     </header>
+
     <section id ="home">
         <div class="home-title">
             <h1>Welcome <br>to the <span>Wilders<br>Book</span></h1>
         </div>
         <div></div>
     </section>
-    <hr>
+    <!--<hr>-->
     <section id="about">
         <div>
             <img src="assests/code-unsplash.jpg" alt="About us" width="200px"/>
             <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Welcome to the WildersBook Website! Students at the WildCode school 
+                we have created this website to present you a book of the Wilders from the class 
+                of 2022 in Berlin. Here you can find informations, gitHub and LinkedIn link about ourself and our schoolmates! <br><br>
+                The goal of this first project was to make a one page website, using HTML and CSS and JavaScript (optional) and gitHub. 
             </p>
 
         </div>
     </section>
-    <hr>
+
+    
+    <!--<hr>-->
+
     <section id="wilders">
         <h2>The wilders</h2>
         <div class="container">
+            <!-- THIS PART IS NOW WITH DOM MANIPULATION 
             <div class="cards">
                 <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
                 <div class="cards-container">
-                    <h4>Name 1</h4>
+                    <h5>Name 2</h5> -->
                     <!--Button to Open The Modal-->
-                    <button id="modal-button">More</button>
+                    <!--<button id="modal-button2">More</button>-->
                     <!--The Modal-->
-                    <div id="modal-box" class="modal">
+                    <!--<div id="modal-box2" class="modal">-->
                         <!--Modal content-->
-                        <div class="modal-content">
-                            <span id="close1" class="close">&times;</span>
-                            <div class="modal-container">
-                                <div class="modal-header">
-                                    <div class="modal-header-items-1">
-                                        <img class="modal-header-image"src="assests/7848.jpg" alt="profil image"/>
-                                    </div>
-                                    <div class="modal-header-items-2">
-                                        <div>
-                                            <h4>Name 1</h4>
-                                        </div>
-                                        <div>
-                                            <img src="assests/icons8-github.svg" alt="github" style="width:20px"/>
-                                            <img src="assests/icons8-linkedin.svg" alt="linkedin" style="width:20px"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                         deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
-                <div class="cards-container">
-                    <h4>Name 2</h4>
-                    <!--Button to Open The Modal-->
-                    <button id="modal-button2">More</button>
-                    <!--The Modal-->
-                    <div id="modal-box2" class="modal">
-                        <!--Modal content-->
-                        <div class="modal-content">
+                        <!--<div class="modal-content">
                             <span id="close2" class="close">&times;</span>
                             <div class="modal-container">
                                 <div class="modal-header">
@@ -112,11 +96,13 @@
                                     <div class="modal-header-items-2">
                                         <div>
                                             <h4>Name 2</h4>
+
                                         </div>
                                         <div>
                                             <img src="assests/icons8-github.svg" alt="github" style="width:20px"/>
                                             <img src="assests/icons8-linkedin.svg" alt="linkedin" style="width:20px"/>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="modal-body">
@@ -126,6 +112,7 @@
                                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+
                                          deserunt mollit anim id est laborum.
                                     </p>
                                 </div>
@@ -133,139 +120,30 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="cards">
-                <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
-                <div class="cards-container">
-                    <h4>Name 3</h4>
-                    <!--Button to Open The Modal-->
-                    <button id="modal-button3">More</button>
-                    <!--The Modal-->
-                    <div id="modal-box3" class="modal">
-                        <!--Modal content-->
-                        <div class="modal-content">
-                            <span id="close3" class="close">&times;</span>
-                            <div class="modal-container">
-                                <div class="modal-header">
-                                    <div class="modal-header-items-1">
-                                        <img class="modal-header-image"src="assests/7848.jpg" alt="profil image"/>
-                                    </div>
-                                    <div class="modal-header-items-2">
-                                        <div>
-                                            <h4>Name 3</h4>
-                                        </div>
-                                        <div>
-                                            <img src="assests/icons8-github.svg" alt="github" style="width:20px"/>
-                                            <img src="assests/icons8-linkedin.svg" alt="linkedin" style="width:20px"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                         deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
-                <div class="cards-container">
-                    <h4>Name 4</h4>
-                    <!--Button to Open The Modal-->
-                    <button id="modal-button4">More</button>
-                    <!--The Modal-->
-                    <div id="modal-box4" class="modal">
-                        <!--Modal content-->
-                        <div class="modal-content">
-                            <span id="close4" class="close">&times;</span>
-                            <div class="modal-container">
-                                <div class="modal-header">
-                                    <div class="modal-header-items-1">
-                                        <img class="modal-header-image"src="assests/7848.jpg" alt="profil image"/>
-                                    </div>
-                                    <div class="modal-header-items-2">
-                                        <div>
-                                            <h4>Name 4</h4>
-                                        </div>
-                                        <div>
-                                            <img src="assests/icons8-github.svg" alt="github" style="width:20px"/>
-                                            <img src="assests/icons8-linkedin.svg" alt="linkedin" style="width:20px"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                         deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
-                <div class="cards-container">
-                    <h4>Name 5</h4>
-                    <!--Button to Open The Modal-->
-                    <button id="modal-button5">More</button>
-                    <!--The Modal-->
-                    <div id="modal-box5" class="modal">
-                        <!--Modal content-->
-                        <div class="modal-content">
-                            <span id="close5" class="close">&times;</span>
-                            <div class="modal-container">
-                                <div class="modal-header">
-                                    <div class="modal-header-items-1">
-                                        <img class="modal-header-image"src="assests/7848.jpg" alt="profil image"/>
-                                    </div>
-                                    <div class="modal-header-items-2">
-                                        <div>
-                                            <h4>Name 5</h4>
-                                        </div>
-                                        <div>
-                                            <img src="assests/icons8-github.svg" alt="github" style="width:20px"/>
-                                            <img src="assests/icons8-linkedin.svg" alt="linkedin" style="width:20px"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                         deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="container2"></div>
     </section>
-    <hr>
+
+    <section id="aboutschool">
+        <img src="assests/berlin-wild-code.jpg" alt="About School" width="200px"/>
+        <h2>About The School</h2>
+        <p>Wild Code School is a leading European tech school offering lifelong learning programs 
+            at 20+ campuses, remotely or at company’s offices. In Berlin Wild Code School offer an Intensive web development course. 
+            The goal is to become a web developer in 5 months 
+            and learn to code in JavaScript. <br><br>
+            This intensive professional training 
+            course is focusing on a project-based pedagogy where our students can work for 
+            real stakes such as during hackathons with our partners, or during client projects!
+        </p>
+
+    </section>
+    
+    <!--<hr>-->
     <section id="contact">
       <div id="wrapper">
         <h3 class="contact-header"> Contact A Wilder Student</h3>
+
           <form action="#" id="form">
             <label name="name" for="name">Your Name:</label>
             <input type="text" id="name" value="" required />
