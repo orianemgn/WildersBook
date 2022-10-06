@@ -1,4 +1,17 @@
 // console.log("Hello World!")
+ //Section navbar
+ const hamburger = document.querySelector(".hamburger");
+ const navMenu = document.querySelector(".nav-menu");
+ hamburger.addEventListener("click", () => {
+   hamburger.classList.toggle("active");
+   navMenu.classList.toggle("active");
+ })
+ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+   hamburger.classList.remove("active");
+   navMenu.classList.remove("active");
+ }))
+
+ //end section navbar
 
 //Section 3 Wilders - code to display the wilders 
 let wildersGroup1 = [
@@ -150,9 +163,6 @@ const container =  document.querySelector(".container");
 
 const container2 =  document.querySelector(".container2");
 
-
-
-
 //Function to create the cards in container 
 function createCards(container, id, name, description, picture, linkedin, github) {
   // Step 1: The card
@@ -282,11 +292,7 @@ function createCards(container, id, name, description, picture, linkedin, github
 
 
 //Create a for loop, for each element of the array, 
-//call the function createCard with the corresponding parameter */
-
-//function handelWilder(){
-//  const getGroup = 
-//}; 
+//call the function createCard with the corresponding parameter
 
 for (let i = 0; i < wildersGroup1.length; i++) {
   createCards(container, wildersGroup1[i].id, wildersGroup1[i].name, wildersGroup1[i].description, wildersGroup1[i].picture, wildersGroup1[i].linkedin, wildersGroup1[i].gitHub);
@@ -304,7 +310,6 @@ function showSecondWilder(e){
 
   container2.classList.add("show");
   container.classList.add("hide");  
- 
 }
 
 let wilder1 = document.getElementById("groupA"); 
@@ -315,35 +320,15 @@ function showFirstWilder(e){
   container2.classList.remove("show"); 
 }
 
-
-
-
-
-
-
-//for (let i = 0; i < wildersGroup2.length; i++) {
-//  createCards(wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
-//}
-
-
-//Implement logic : if nothing other handelclick on our group display our group 
-// if click on groupe 2 display evrery one of wild School 
-
-
 //Section 3 - Wilders - Code for the modal
 //Get the element in the cards div
 let cards = document.getElementsByClassName('cards-container');
-// console.log('CARDS', cards);
-
 
 //get all button in array id to use it later to get the button how open the modal
-
 let buttonId = [];
 let modalBoxId = [];
 
 for (let i = 0; i < cards.length; i++) {
-  // console.log(cards[i].children[1].id, cards[i].children[2].id);
-  //(cards[i].children[1].id.innerHTML).push(buttonId);
   buttonId.push(cards[i].children[1].id);
   modalBoxId.push(cards[i].children[2].id);
 }
@@ -363,19 +348,14 @@ for (let i = 0; i < buttonId.length; i++) {
     let btn = document.getElementById(buttonId[i]); 
     // the the modal
     let modal = document.getElementById(modalBoxId[i]);
-    //console.log("Modal", modal.innerHTML)
-
     let span = document.getElementById(spanId[i]);
-    //console.log("SPANID", span)
 
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
       modal.style.display="block"; 
-      //console.log(modal)
     }
 
     //When the user clicks on span (x), close the modal
-    //console.log(span) 
     span.onclick = function(){
       modal.style.display = "none"; 
     }; 
@@ -383,7 +363,6 @@ for (let i = 0; i < buttonId.length; i++) {
     //When the user clicks anywhere outsite the modal, close interface 
     window.addEventListener("click", function(event) {
     console.log("Event", event.target, "modal", modal);
-
     if (event.target == modal) {
       modal.style.display = 'none';
     }
@@ -486,19 +465,3 @@ const setData = (id, val) => {
   let messageData = {};
   //console.log((messageData[id] = val));
 };
-
-
-
- // section navbar
- const hamburger = document.querySelector(".hamburger");
- const navMenu = document.querySelector(".nav-menu");
- hamburger.addEventListener("click", () => {
-   hamburger.classList.toggle("active");
-   navMenu.classList.toggle("active");
- })
- document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-   hamburger.classList.remove("active");
-   navMenu.classList.remove("active");
- }))
-
- //end section navbar
