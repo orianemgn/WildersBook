@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  }
+
 :root {
   /* Color to use again in the rest of the code*/
   --primary-color: #f76c6c;
@@ -111,7 +115,6 @@ header {
   background-color: var(--primary-color);
   position: fixed;
   top: 0;
-  
   left: 0;
   right: 0;
 }
