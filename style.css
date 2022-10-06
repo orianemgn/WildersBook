@@ -121,14 +121,22 @@ header {
 li {
   list-style: none;
 }
+
+
 a {
-  color:var(--secondary-color);
+  color:var(--primary-color);
   text-decoration: none;
-  text-transform: uppercase;
+  font-family: 'Varela Round', sans-serif;
+  /*text-transform: uppercase;*/
   font-size: 16px;
   font-weight:bolder;
   letter-spacing: 1px;
-  
+}
+
+@media screen and (min-width:768px){
+  a{
+    color:var(--secondary-color);
+  }
 }
 .navigation {
   max-width: 1224px;
