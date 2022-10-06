@@ -122,7 +122,7 @@ li {
   list-style: none;
 }
 a {
-  color:--primary-text-color;
+  color:var(--secondary-color);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -156,9 +156,10 @@ a {
 }
 .nav-link {
   transition: 0.3s ease-out;
+  
 }
 .nav-link:hover {
-  color:var(--third-color);
+  color:var(--primary-text-color);
 }
 .hamburger {
   display: none;
@@ -275,7 +276,7 @@ a {
 
 #wilders {
   text-align: center;
-  margin: 40px;
+  margin: 70px;
   }
 
 
@@ -284,7 +285,6 @@ a {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      height: 70vh;
   }
 
 
@@ -329,14 +329,16 @@ a {
 
   .cards-container {
     padding-top: 10px;
-    margin: auto;
     justify-content: center;
 }
 
   .cards button {
       background-color: var(--primary-color);
       border: 1px solid var(--primary-color);
-      margin: 10px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px; 
       padding: 5% 15%;
       border-radius: 4px;
       color: var(--secondary-color);
@@ -344,6 +346,7 @@ a {
       font-size: 0.8rem;
       letter-spacing: 0.05rem;
       cursor: pointer;
+      justify-content: center;
   }
 
   .cards button:hover {
@@ -404,7 +407,9 @@ a {
 
     .social-links img{
       padding: 10px 20px;
+      margin-inline: 10px;
     }
+
 
     .modal-header-image {
       width: 100%;
