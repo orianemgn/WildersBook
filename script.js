@@ -393,24 +393,36 @@ for (let i = 0; i < buttonId.length; i++) {
 let inputs = document.querySelectorAll('input');
 
 let button = document.getElementById('submit');
-console.log(button);
+
 
 button.addEventListener('click', function () {
-  console.log(doSomeMagic(inputs));
+  handleSubmit(inputs);
 });
 
-function doSomeMagic(inputsEle) {
+function handleSubmit(values) {
+  console.log(values);
+}
+
+function collectValues(inputsEle) {
   for (let i = 0; i < inputsEle.length; i++) {
-    // console.log(inputs[i]);
     inputsEle[i].addEventListener(
       'input',
       function (e) {
         e.preventDefault();
-        onSubmit(inputsEle[i]);
+        saveTheValues(e.target.value, inputs[i].id);
       },
       false
     );
   }
+}
+
+collectValues(inputs);
+
+const contactValues = {};
+
+function saveTheValues(values, id) {
+  contactValues[id] = values;
+  console.log(contactValues);
 }
 
 const onSubmit = ele => {
