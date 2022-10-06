@@ -265,15 +265,24 @@
     <hr>
     <section id="contact">
       <div id="wrapper">
-        <h3 class="contact-header"> Contact A Student</h3>
+        <h3 class="contact-header"> Contact A Wilder Student</h3>
           <form action="#" id="form">
-            <label for="name">Name</label>
+            <label name="name" for="name">Your Name:</label>
             <input type="text" id="name" value="" required />
-            <label for="email">Email</label>
+            <label for="email">Your Email:</label>
             <input type="text" id="email" value="" required />
-            <label for="telephone">Telephone</label>
-            <input type="text" id="telephone" value="" required />
-            <label for="message">Message</label>
+            <label for="telephone">Telephone:</label>
+            <input type="number" id="telephone" value="" required />
+            <label name="student_name" for="student_name">Student Name:</label>
+            
+            <select id="student_name">
+              <option value="Ahmed">Ahmed</option>
+              <option value="Handric">
+              <option value="Orian">
+            </select>
+            
+            
+            <label for="message">Your Message:</label>
             <textarea name="message" aria-valuetext="" required id="message" cols="30" rows="10"></textarea><br />
             <input type="submit" class="submit" value="Send" name="submit" id="submit" />
           </form>
