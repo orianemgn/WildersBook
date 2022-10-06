@@ -100,16 +100,18 @@ h5 {
 .logo {
   width: 120px;
   height: auto;
-  object-fit: contain;
+  object-fit:contain;
+  display: flex;
+  padding: auto;
   
-
+  
 }
 
 header {
   background-color: var(--primary-color);
   position: fixed;
   top: 0;
-  bottom: 90%;
+  
   left: 0;
   right: 0;
 }
@@ -193,7 +195,7 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 75px;
+    top: 70px;
     gap: 0;
     flex-direction: column;
     width: 100%;
