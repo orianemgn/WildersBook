@@ -19,7 +19,7 @@ let wildersGroup1 = [
     id: 1, 
     name: "Andrei", 
     description: "Andrei want to become a Web Developer ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture:  "/assests/7848.jpg", 
+    picture:  "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/", 
     gitHub: "https://github.com/AndreiLhu" 
   },
@@ -27,7 +27,7 @@ let wildersGroup1 = [
     id: 2, 
     name: "Ahmed", 
     description: "Ahmed ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/Avatar-Ahmed.svg", 
+    picture: "assests/Avatar-Ahmed.svg", 
     linkedin: "https://www.linkedin.com/", 
     gitHub: "https://github.com/elbehary01" 
   },
@@ -35,7 +35,7 @@ let wildersGroup1 = [
     id: 3, 
     name: "Goerg", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/Avatar-Goerg.svg", 
+    picture: "assests/Avatar-Goerg.svg", 
     linkedin: "https://www.linkedin.com/", 
     gitHub: "https://github.com/GeorgBerlin" 
   },
@@ -43,7 +43,7 @@ let wildersGroup1 = [
     id: 4,
     name: "Oriane", 
     description: "Oriane studied communication and cinema didactic, during corina she decided to change path and become a Web developer, that's why she is taking part at the Wild Code School.",
-    picture: "/assests/Avatar-Oriane4.svg", 
+    picture: "assests/Avatar-Oriane4.svg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -55,7 +55,7 @@ let wildersGroup2 = [
     id: 5,
     name: "Hendra", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -63,7 +63,7 @@ let wildersGroup2 = [
     id: 6,
     name: "Lars", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -71,7 +71,7 @@ let wildersGroup2 = [
     id: 7,
     name: "Lera", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -79,7 +79,7 @@ let wildersGroup2 = [
     id: 8,
     name: "Luis", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -87,7 +87,7 @@ let wildersGroup2 = [
     id: 9,
     name: "Marianne", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -95,7 +95,7 @@ let wildersGroup2 = [
     id:10,
     name: "Mathieu", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -103,7 +103,7 @@ let wildersGroup2 = [
     id: 11,
     name: "Mulugeta", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -111,7 +111,7 @@ let wildersGroup2 = [
     id:12,
     name: "Nevin", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -119,7 +119,7 @@ let wildersGroup2 = [
     id: 13,
     name: "Robert", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -127,7 +127,7 @@ let wildersGroup2 = [
     id: 14,
     name: "Stedan D", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -135,7 +135,7 @@ let wildersGroup2 = [
     id: 15,
     name: "Stefan I", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -143,7 +143,7 @@ let wildersGroup2 = [
     id: 16,
     name: "Valeriia", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
@@ -151,7 +151,7 @@ let wildersGroup2 = [
     id: 17,
     name: "Vladyslava", 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    picture: "/assests/7848.jpg", 
+    picture: "assests/7848.jpg", 
     linkedin: "https://www.linkedin.com/in/magninoriane/", 
     gitHub: "https://github.com/orianemgn" 
   },
