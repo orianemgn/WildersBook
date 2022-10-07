@@ -250,7 +250,7 @@ a {
   background-size: cover;
   height: 100vh;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -262,7 +262,7 @@ a {
 #home h1 span {
   font-size: 3.5rem;
   color: var(--primary-color);
-  display: block; 
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -302,7 +302,7 @@ a {
 
 #about img {
   border: 1px solid var(--primary-color);
-  width: 100%; 
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
