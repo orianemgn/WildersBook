@@ -153,8 +153,9 @@ a {
     text-align: center;
   }
   a{
-    color:var(--secondary-color);
+    color:var(--primary-color);
   }
+  
 }
 .navigation {
   max-width: 1224px;
