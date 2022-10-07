@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Reem+Kufi:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Reem+Kufi:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>WildersBook</title>
 </head>
 <body>
 
     <header>
-        <div class="navigation"> 
+        <div class="navigation">
             <img class="logo" src="assests/logo school.png" alt="Logo" />
            <nav class="navbar">
-            
+
               <ul class="nav-menu">
                  <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
@@ -52,7 +50,8 @@
 
     <section id ="home">
         <div class="home-title">
-            <h1>Welcome <br>to the <span>Wilders<br>Book</span></h1>
+          <h1 class="h1-desktop">Welcome to <br><span>Wilders Book</span></h1>
+
         </div>
         <div></div>
     </section>
@@ -61,22 +60,22 @@
         <div>
             <img src="assests/code-unsplash.jpg" alt="About us" width="200px"/>
             <h2>About us</h2>
-            <p>Welcome to the WildersBook Website! Students at the WildCode school 
-                we have created this website to present you a book of the Wilders from the class 
+            <p>Welcome to the WildersBook Website! Students at the WildCode school
+              we have created this website to present you a book of the Wilders from the class
                 of 2022 in Berlin. Here you can find informations, gitHub and LinkedIn link about ourself and our schoolmates! <br><br>
-                The goal of this first project was to make a one page website, using HTML and CSS and JavaScript (optional) and gitHub. 
+                The goal of this first project was to make a one page website, using HTML and CSS and JavaScript (optional) and gitHub.
             </p>
 
         </div>
     </section>
 
-    
+
     <!--<hr>-->
 
     <section id="wilders">
         <h2>The wilders</h2>
         <div class="container">
-            <!-- THIS PART IS NOW WITH DOM MANIPULATION 
+            <!-- THIS PART IS NOW WITH DOM MANIPULATION
             <div class="cards">
                 <img class="cards-image" src="assests/7848.jpg" alt="profil image"/>
                 <div class="cards-container">
@@ -128,17 +127,18 @@
     <section id="aboutschool">
         <img src="assests/berlin-wild-code.jpg" alt="About School" width="200px"/>
         <h2>About The School</h2>
-        <p>Wild Code School is a leading European tech school offering lifelong learning programs 
-            at 20+ campuses, remotely or at company’s offices. In Berlin Wild Code School offer an Intensive web development course. 
-            The goal is to become a web developer in 5 months 
+        <p>Wild Code School is a leading European tech school offering lifelong learning programs
+          at 20+ campuses, remotely or at company’s offices. In Berlin Wild Code School offer an Intensive web development
+          course.
+          The goal is to become a web developer in 5 months
             and learn to code in JavaScript. <br><br>
-            This intensive professional training 
-            course is focusing on a project-based pedagogy where our students can work for 
+            This intensive professional training
+            course is focusing on a project-based pedagogy where our students can work for
             real stakes such as during hackathons with our partners, or during client projects!
         </p>
 
     </section>
-    
+
     <!--<hr>-->
     <section id="contact">
       <div id="wrapper">
@@ -147,19 +147,28 @@
           <form action="#" id="form">
             <label name="name" for="name">Your Name:</label>
             <input type="text" id="name" value="" required />
+
             <label for="email">Your Email:</label>
             <input type="text" id="email" value="" required />
+
             <label for="telephone">Telephone:</label>
             <input type="number" id="telephone" value="" required />
+
             <label name="student_name" for="student_name">Student Name:</label>
-            
             <select id="student_name">
-              <option value="Ahmed">Ahmed</option>
-              <option value="Handric">
-              <option value="Orian">
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
+              <option value="">Ahmed</option>
             </select>
-            
-            
+
+
             <label for="message">Your Message:</label>
             <textarea name="message" aria-valuetext="" required id="message" cols="30" rows="10"></textarea><br />
             <input type="submit" class="submit" value="Send" name="submit" id="submit" />
