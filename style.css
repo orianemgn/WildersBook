@@ -233,11 +233,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #home div {
   width: 50%;
-  padding: 30px 60px 90px 60px;
+  padding: 100px 60px 90px 60px;
   margin-left: 60px;
 }
 
@@ -262,7 +263,7 @@ a {
 
 #about h2 {
   color: var(--primary-color);
-
+  padding: 10px 0;
 }
 
 #about p {
@@ -272,10 +273,16 @@ a {
 }
 
 #about img {
-  float: left;
-  margin: 0 30px 5px 0;
   border: 1px solid var(--primary-color);
-  width: 40%;
+  width: 100%; 
+}
+
+@media screen and (min-width: 768px) {
+  #about img {
+    width: 40%;
+    float: left;
+    margin: 0 30px 5px 0;
+  }
 }
 
 
@@ -317,7 +324,7 @@ a {
       background-color: var(--secondary-color);
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
-      width: 50%;
+      width: 60%;
       border-radius: 10px;
       margin: 30px; 
       padding: 30px;

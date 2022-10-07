@@ -329,6 +329,7 @@ let buttonId = [];
 let modalBoxId = [];
 
 for (let i = 0; i < cards.length; i++) {
+  console.log(cards[i].children[0])
   buttonId.push(cards[i].children[1].id);
   modalBoxId.push(cards[i].children[2].id);
 }
