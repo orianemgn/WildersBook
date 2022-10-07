@@ -502,11 +502,13 @@ a {
   #aboutschool h2 {
     color: var(--secondary-color);
     order: -1;
+    margin-bottom: 15px;
   }
 
   #aboutschool img {
     border: 1px solid var(--secondary-color);
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 
