@@ -236,19 +236,31 @@ a {
   overflow: hidden;
 }
 
-#home div {
-  width: 50%;
-  padding: 100px 60px 90px 60px;
-  margin-left: 60px;
-}
+
 
 #home h1 {
-  font-size: 3.4rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 #home h1 span {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: var(--primary-color);
+  display: block; 
+}
+
+@media screen and (min-width: 768px) {
+  #home div {
+    width: 50%;
+    padding: 150px 50px 80px 70px;
+  }
+  #home h1 span {
+    font-size: 6rem;
+  }
+  #home h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
 }
 
 /*About us - section2*/
