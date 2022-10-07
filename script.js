@@ -1,177 +1,161 @@
-// Start section navBar
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
-document.querySelectorAll('.nav-link').forEach(n =>
-  n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-  })
-);
-// End section navBar
+// console.log("Hello World!")
+ //Section navbar
+ const hamburger = document.querySelector(".hamburger");
+ const navMenu = document.querySelector(".nav-menu");
+ hamburger.addEventListener("click", () => {
+   hamburger.classList.toggle("active");
+   navMenu.classList.toggle("active");
+ })
+ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+   hamburger.classList.remove("active");
+   navMenu.classList.remove("active");
+ }))
 
-// Start section 3 Wilders - code to display the wilders
+ //end section navbar
+
+//Section 3 Wilders - code to display the wilders 
 let wildersGroup1 = [
   {
-    id: 1,
-    name: 'Andrei',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/',
-    gitHub: 'https://github.com/AndreiLhu',
+    id: 1, 
+    name: "Andrei", 
+    description: "Andrei want to become a Web Developer ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture:  "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/", 
+    gitHub: "https://github.com/AndreiLhu" 
   },
   {
-    id: 2,
-    name: 'Ahmed',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/',
-    gitHub: 'https://github.com/elbehary01',
+    id: 2, 
+    name: "Ahmed", 
+    description: "Ahmed ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/Avatar-Ahmed.svg", 
+    linkedin: "https://www.linkedin.com/", 
+    gitHub: "https://github.com/elbehary01" 
   },
   {
-    id: 3,
-    name: 'Goerg',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/',
-    gitHub: 'https://github.com/GeorgBerlin',
+    id: 3, 
+    name: "Goerg", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/Avatar-Goerg.svg", 
+    linkedin: "https://www.linkedin.com/", 
+    gitHub: "https://github.com/GeorgBerlin" 
   },
   {
     id: 4,
-    name: 'Oriane',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/Avatar-Oriane.svg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Oriane", 
+    description: "Oriane studied communication and cinema didactic, during corina she decided to change path and become a Web developer, that's why she is taking part at the Wild Code School.",
+    picture: "assests/Avatar-Oriane4.svg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
 ];
 
 let wildersGroup2 = [
   {
     id: 5,
-    name: 'Hendra',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Hendra", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 6,
-    name: 'Lars',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Lars", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 7,
-    name: 'Lera',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Lera", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 8,
-    name: 'Luis',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Luis", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 9,
-    name: 'Marianne',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Marianne", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
-    id: 10,
-    name: 'Mathieu',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    id:10,
+    name: "Mathieu", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 11,
-    name: 'Mulugeta',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Mulugeta", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
-    id: 12,
-    name: 'Nevin',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    id:12,
+    name: "Nevin", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 13,
-    name: 'Robert',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Robert", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 14,
-    name: 'Stedan D',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Stedan D", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 15,
-    name: 'Stefan I',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Stefan I", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 16,
-    name: 'Valeriia',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Valeriia", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
   {
     id: 17,
-    name: 'Vladyslava',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    picture: '/assests/7848.jpg',
-    linkedin: 'https://www.linkedin.com/in/magninoriane/',
-    gitHub: 'https://github.com/orianemgn',
+    name: "Vladyslava", 
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    picture: "assests/7848.jpg", 
+    linkedin: "https://www.linkedin.com/in/magninoriane/", 
+    gitHub: "https://github.com/orianemgn" 
   },
-];
+]; 
+
 
 //Get the container where have to be the wilders
 const container = document.querySelector('.container');
@@ -313,12 +297,10 @@ function createCards(
   modalBody.appendChild(modalDescription);
 }
 
-//Create a for loop, for each element of the array,
-//call the function createCard with the corresponding parameter */
 
-//function handelWilder(){
-//  const getGroup =
-//};
+
+//Create a for loop, for each element of the array, 
+//call the function createCard with the corresponding parameter
 
 for (let i = 0; i < wildersGroup1.length; i++) {
   createCards(
@@ -344,6 +326,8 @@ for (let i = 0; i < wildersGroup2.length; i++) {
   );
 }
 
+//Implement logic : if nothing other handelclick on our group display our group
+// if click on groupe 2 display evrery one of wild School
 let wilder2 = document.getElementById('groupB');
 wilder2.addEventListener('click', showSecondWilder);
 
@@ -360,17 +344,12 @@ function showFirstWilder(e) {
   container2.classList.remove('show');
 }
 
-//for (let i = 0; i < wildersGroup2.length; i++) {
-//  createCards(wildersGroup2[i].id, wildersGroup2[i].name, wildersGroup2[i].description, wildersGroup2[i].picture, wildersGroup2[i].linkedin, wildersGroup2[i].gitHub);
-//}
-
-//Implement logic : if nothing other handelclick on our group display our group
-// if click on groupe 2 display evrery one of wild School
 
 //Section 3 - Wilders - Code for the modal
 //get all button in array id to use it later to get the button how open the modal
 //Get the element in the cards div
 let cards = document.getElementsByClassName('cards-container');
+
 let buttonId = [];
 let modalBoxId = [];
 for (let i = 0; i < cards.length; i++) {
@@ -389,32 +368,24 @@ for (let i = 0; i < modelContent.length; i++) {
 //let span1 = document.getElementsByClassName("close")[1];
 let btn, modal, span;
 for (let i = 0; i < buttonId.length; i++) {
-  //get the button that opens the modal
-  let btn = document.getElementById(buttonId[i]);
+    //get the button that opens the modal
+    let btn = document.getElementById(buttonId[i]); 
+    // the the modal
+    let modal = document.getElementById(modalBoxId[i]);
+    let span = document.getElementById(spanId[i]);
 
-  // the the modal
-  let modal = document.getElementById(modalBoxId[i]);
-  //console.log("Modal", modal.innerHTML)
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display="block"; 
+    }
 
-  let span = document.getElementById(spanId[i]);
-  //console.log("SPANID", span)
+    //When the user clicks on span (x), close the modal
+    span.onclick = function(){
+      modal.style.display = "none"; 
+    }; 
 
-  // When the user clicks on the button, open the modal
-  btn.onclick = function () {
-    modal.style.display = 'block';
-
-  };
-
-  //When the user clicks on span (x), close the modal
-  //console.log(span)
-  span.onclick = function () {
-    modal.style.display = 'none';
-  };
-
-  //When the user clicks anywhere outsite the modal, close interface
-  window.addEventListener('click', function (event) {
-    // console.log('Event', event.target, 'modal', modal);
-
+    //When the user clicks anywhere outsite the modal, close interface 
+    window.addEventListener("click", function(event) {
     if (event.target == modal) {
       modal.style.display = 'none';
     }
@@ -513,3 +484,10 @@ const checkValdity = (id, value) => {
     return false;
   }
 };
+
+const setData = (id, val) => {
+  //console.log('HAHAHAHAH', id, val);
+  let messageData = {};
+  //console.log((messageData[id] = val));
+};
+
