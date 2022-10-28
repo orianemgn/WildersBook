@@ -1,5 +1,7 @@
 # WildersBook
 
+:mag_right: [You can see the project here](https://orianemgn.github.io/WildersBook/)
+
 :nerd_face: We did this project as part of the first Wild Code School project. The goal of this project was to make a one page website, using HTML and CSS and JavaScript (optional) and gitHub. 
 
 We divided the work in the following way: 
